@@ -36,10 +36,19 @@ body * {
 h1 {
     font-size: 60px;
     margin: -80px 0 40px;
+    font-family: cursive;
+}
+
+.year {
+    font-size: 200px;
+    z-index: -1;
+    position: absolute;
+    bottom: 90px;
 }
 
 .countdown {
-    display: flex;
+    /* display: flex; */
+    display: none;
     transform: scale(2);
 }
 
@@ -49,6 +58,9 @@ h1 {
     align-items: center;
     justify-content: center;
     margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(122, 122, 122, 0.5);
 }
 
 .time h2 {
@@ -57,7 +69,7 @@ h1 {
 
 @media (max-width: 500px) {
     h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .time {
@@ -72,4 +84,14 @@ h1 {
     .time small {
         font-size: 10px;
     }
+
+    .year {
+        font-size: 90px;
+        bottom: 170px;
+    }
+}
+
+img {
+    height: 70px;
+    width: 70px;
 }
